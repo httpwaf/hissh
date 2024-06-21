@@ -1,7 +1,7 @@
 # hissh
 
 #### 一 、介绍
-hissh是一款开源的SSH命令审计产品。
+hissh是一款开源的SSH命令审计软件。
 
 #### 二 、SSH审计原因
 ##### 1、黑客通过钓鱼控制了管理员电脑
@@ -29,7 +29,7 @@ hissh是一款开源的SSH命令审计产品。
 
 2 、全面防御对SSH服务的扫描探测、密码破解等。
 
-3 、编译方法用root权限直接make运行./hissh命令即可，然后另外开一个终端运行任意命令就会打印如下内容：
+3 、编译环境需要gcc、make，先用apt install libelf-dev或者yum install elfutils-libelf-devel安装好依赖库后，然后用root权限直接make运行./hissh命令即可，然后另外开一个终端运行任意命令就会打印如下内容：
 TIME     COMM             PID     CMD
 
 07:31:41 bash             193029  ls -al
